@@ -21,12 +21,67 @@ Confirm Password : <input type="password" name="con"><p>
 <input type="reset" value="Reset"><p>
 
 <?php
-	if(isset($_GET['d']))
+	if(isset($_GET['p']))
 	{
-		echo "<font color='red'><b>Confirm the password</b></font>";
+		echo"<font color='red'><b>Enter First name</b></font>";
+	}
+	else
+	{
+		if(isset($_GET['q']))
+		{
+			echo"<font color='red'><b>Enter Last name</b></font>";
+		}
+		else
+		{
+			if(isset($_GET['r']))
+			{
+				echo"<font color='red'><b>Entry your Gender</b></font>";
+			}
+			else
+			{
+				if(isset($_GET['s']))
+				{
+					echo"<font color='red'><b>Enter Phone no.</b></font>";
+				}
+				else
+				{
+					if(isset($_GET['t']))
+					{
+						echo"<font color='red'><b>Enter Email</b></font>";
+					}
+					else
+					{
+						if(isset($_GET['u']))
+						{
+							echo"<font color='red'><b>Enter Userid</b></font>";
+						}
+						else
+						{
+							if(isset($_GET['v']))
+							{
+								echo"<font color='red'><b>Enter Password</b></font>";
+							}
+							else
+							{
+								if(isset($_GET['w']))
+								{
+									echo"<font color='red'><b>Confirm Password</b></font>";
+								}
+								else
+								{
+									if(isset($_GET['d']))
+									{
+										echo "<font color='red'><b>Confirm the password</b></font>";
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 ?>
-
 </form>
 </center>
 </body>
