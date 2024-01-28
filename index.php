@@ -12,9 +12,11 @@
 		Password : <input type="password" name="pass"><p>
 		<input type="submit" value="Sign in">
 		<input type="reset" value="Reset"><p><br>
+		Can't remember Password ?
+		<a href="ForgotPass.php">FORGOT PASSWORD</a><p>
 		Don't have an account ?
 		<a href="CreateAccount.php">CREATE ACCOUNT</a><p>
-		
+
 <?php
 	if(isset($_GET['a']))
 	{
@@ -40,6 +42,13 @@
 	if(isset($_GET['h']))
 	{
 		echo "<font color='#5202D5'><b>Account Deleted</b></font>";
+	}
+?>
+
+<?php
+	if(isset($_GET['l']))
+	{
+		echo "<font color='green'><b>Forgot Password Done</b></font>";
 	}
 ?>
 	
