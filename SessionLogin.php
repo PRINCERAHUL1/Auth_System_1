@@ -25,14 +25,6 @@
 </html>
 
 <?php
-	}
-	else
-	{
-		header("Location:index.php");
-	}
-?>
-
-<?php
 	if(isset($_GET['g']))
 	{
 		echo "<font color='green'><b>Password Changed</b></font>";
