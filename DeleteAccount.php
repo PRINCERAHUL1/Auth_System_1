@@ -11,5 +11,5 @@
 	header("Location: index.php?h=1");
 	mysqli_query($h,$q);
 	mysqli_close($h);
-	//echo"<META HTTP-EQUIV='Refresh' CONTENT='2; URL=http://localhost/PHP Files/demo1.php'>"
+	
 ?>
