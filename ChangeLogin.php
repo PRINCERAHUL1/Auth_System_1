@@ -1,10 +1,11 @@
 <?php
-	//error_reporting(0);
+	error_reporting(0);
 	session_start();
 	if(isset($_SESSION['username']))
 	{
 		$ub = $_SESSION['username'];
 		$pb = $_SESSION['password'];
+		
 	}
 ?>
 
@@ -13,9 +14,11 @@
 <body>
 
 <center>
-<font size=6><b>Changing Password</b></font><p>
+<?php
+	echo "<font size=5>Hello <b>$ub</b></font><p>";
+?>
+<font size=4><b>Changing Password</b></font><p>
 	<form action ="ChangeLoginDB.php" method="post">
-	<div>
 	Current Password : <input type="password" name="curpass"><p>
 	New Password : <input type="password" name="newpass"><p>
 	Confirm Password : <input type="password" name="conpass"><p>
