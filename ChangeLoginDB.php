@@ -13,7 +13,7 @@
 	mysqli_select_db($h,"xyz");
 	if($curpass == $ps)
 	{
-		if($newpass == '')
+		if($newpass == '' || $curpass == $newpass)
 		{
 			header("Location: ChangeLogin.php?e=1");
 		}
